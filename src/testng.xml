@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Session Test Automation Suite" parallel="tests"
+	thread-count="5">
+
+	<test name="Different Testing Feature Test">
+
+		<classes>
+
+
+
+			<class name="com.testpackage.ExceptionTimeOutTest">
+
+				<methods>
+					<exclude name="infintloopTest"></exclude>
+
+				</methods>
+				
+			</class>
+			<class name="com.testpackage.ExpectedExceptions"></class>
+			<class name="com.testpackage.GoogleTest"></class>
+			
+			
+			<class name="com.testpackage.GoogleTitleTest">
+			
+			
+			
+			</class>
+			
+			<class name="com.testpackage.InvocationCountTest"></class>
+			<class name="com.testpackage.TestNgBasics"></class>
+			<class name="com.testpackage.TestNgFeatures"></class>
+
+
+
+		</classes>
+
+	</test>
+
+</suite>
